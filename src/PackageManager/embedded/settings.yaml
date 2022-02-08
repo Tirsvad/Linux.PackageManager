@@ -1,0 +1,29 @@
+os:
+  -
+    distribution: Debian GNU/Linux
+    versions:
+      10: &debian10
+        defaultPackageManager: apt-get
+        silentMode: -qq
+        packageManagerCommands:
+          -
+            cmd: update
+            pm: apt-get
+            arg: -qq update
+          -
+            cmd: upgrade
+            pm: apt-get
+            arg: -qq upgrade
+          -
+            cmd: install
+            pm: apt-get
+            arg: -qq install
+          -
+            cmd: uninstall
+            pm: apt-get
+            arg: -qq remove
+      11: *debian10
+  -
+    distribution: ubuntu
+    versions:
+      20.04: *debian10
