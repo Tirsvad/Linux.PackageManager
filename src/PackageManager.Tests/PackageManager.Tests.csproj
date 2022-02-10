@@ -20,7 +20,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <Reference Include="../PackageManager/bin/Debug/net6.0/PackageManager.dll" />
+    <PackageReference Include="TirsvadCLI.Linux.PackageManager" Version="0.1.4-alpha.1" />
   </ItemGroup>
 
 </Project>
