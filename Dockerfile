@@ -1,4 +1,4 @@
-FROM tirsvad/dotnet6-debian11:latest AS build
+FROM tirsvad/debian_11-dotnet_6:latest AS build
 
 ARG DEBIAN_FRONTEND=noninteractive
 
