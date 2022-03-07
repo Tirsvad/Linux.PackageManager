@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="TirsvadCLI.Linux.PackageManager" Version="0.1.4-alpha.1" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="TirsvadCLI.Linux.PackageManager" Version="0.1.6.0" />
+    </ItemGroup>
 
 </Project>

@@ -34,8 +34,8 @@ public class PackageManagerCompatibilities
   {
     [YamlMember(Alias = "cmd")]
     public string cmd { get; set; }
-    [YamlMember(Alias = "pm")]
-    public string pm { get; set; }
+    [YamlMember(Alias = "app")]
+    public string app { get; set; }
     [YamlMember(Alias = "arg")]
     public string arg { get; set; }
   }

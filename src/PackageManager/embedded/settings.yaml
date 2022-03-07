@@ -7,20 +7,24 @@ os:
         silentMode: -qq
         packageManagerCommands:
           -
+            cmd: preSettings
+            app: echo
+            arg: "'debconf debconf/frontend select Noninteractive' | debconf-set-selections"
+          -
             cmd: update
-            pm: apt-get
+            app: apt-get
             arg: -qq update
           -
             cmd: upgrade
-            pm: apt-get
+            app: apt-get
             arg: -qq upgrade
           -
             cmd: install
-            pm: apt-get
+            app: apt-get
             arg: -qq install
           -
             cmd: uninstall
-            pm: apt-get
+            app: apt-get
             arg: -qq remove
       11: *debian10
   -
