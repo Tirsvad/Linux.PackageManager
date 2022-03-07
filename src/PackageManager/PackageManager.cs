@@ -55,8 +55,6 @@ public class PackageManager
                                 _packageManagerCommand[index.cmd] = new Dictionary<string, string>();
                                 _packageManagerCommand[index.cmd]["app"] = index.app;
                                 _packageManagerCommand[index.cmd]["arg"] = index.arg;
-                                Log.Warning($"app {index.app}");
-                                Log.Warning($"arg {index.arg}");
                             }
                             else
                             {
@@ -72,7 +70,6 @@ public class PackageManager
 
         if (_packageManagerCommand.ContainsKey("preSettings"))
         {
-            Log.Debug("PackageManager finds preSettings");
             using (Process ps = new Process())
             {
                 ps.StartInfo.UseShellExecute = false;
@@ -84,7 +81,6 @@ public class PackageManager
                 string result = ps.StandardOutput.ReadToEnd();
 
                 ps.WaitForExit();
-
             }
 
         }
